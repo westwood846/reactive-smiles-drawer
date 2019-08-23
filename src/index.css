@@ -1,10 +1,16 @@
 body {
-  margin: 0;
-  padding: 3rem 2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
-input {
-  font-size: 20pt;
-  border: none;
-  border-bottom: 1px solid grey;
+.stretched-to-margins {
+  display: block;
+  position: absolute;
+  height: auto;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }

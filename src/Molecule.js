@@ -2,18 +2,38 @@ import React, { Component } from 'react';
 import SmilesDrawer from 'smiles-drawer';
 
 export default class Molecule extends Component {
-  render() {
+  constructor(props) {
+    super(props)
+    this.ref = React.createRef();
+  }
+
+  componentDidMount = () => {
+    setImmediate(() => this.redraw());
+  }
+  
+  componentDidUpdate = () => {
+    this.redraw();
+  }
+
+  redraw = () => {
     let input = this.props.smiles;
-    let options = {};
+    let options = {
+      width: this.ref.current.parentNode.clientWidth,
+      height: this.ref.current.parentNode.clientHeight
+    };
+
+    console.log(options);
     
     let smilesDrawer = new SmilesDrawer.Drawer(options);
     
     SmilesDrawer.parse(input, (tree) => {
-      setImmediate(() => smilesDrawer.draw(tree, 'example-canvas', 'light', false));
+      smilesDrawer.draw(tree, 'example-canvas', 'light', false);
     });
+  }
 
+  render() {
     return (
-      <canvas id="example-canvas" className="molecule" width="500" height="500"/>
+      <canvas id="example-canvas" className="Molecule" ref={this.ref}/>
     )
   }
 }

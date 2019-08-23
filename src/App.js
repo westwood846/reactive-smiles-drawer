@@ -20,9 +20,11 @@ class App extends React.Component {
   }
   
   render = () => (
-    <div className="App">
+    <div className="App stretched-to-margins">
       <input type="text" value={this.state.input} onChange={this.handleInputChange}/>
-      <Molecule smiles={this.state.input}/>
+      <div className="flex-grow-1">
+        <Molecule smiles={this.state.input}/>
+      </div>
     </div>
   );
 }
