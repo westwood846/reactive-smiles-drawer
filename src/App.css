@@ -6,7 +6,7 @@
 input {
   font-size: 20pt;
   border: none;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #616161;
 }
 
 .flex-grow-1 {
