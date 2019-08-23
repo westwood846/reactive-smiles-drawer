@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/reactive-smiles-drawer/static/css/main.d16b9f11.chunk.css",
+    "main.js": "/reactive-smiles-drawer/static/js/main.205a7145.chunk.js",
+    "main.js.map": "/reactive-smiles-drawer/static/js/main.205a7145.chunk.js.map",
+    "runtime~main.js": "/reactive-smiles-drawer/static/js/runtime~main.1d046d94.js",
+    "runtime~main.js.map": "/reactive-smiles-drawer/static/js/runtime~main.1d046d94.js.map",
+    "static/js/2.3ee6d4db.chunk.js": "/reactive-smiles-drawer/static/js/2.3ee6d4db.chunk.js",
+    "static/js/2.3ee6d4db.chunk.js.map": "/reactive-smiles-drawer/static/js/2.3ee6d4db.chunk.js.map",
+    "index.html": "/reactive-smiles-drawer/index.html",
+    "precache-manifest.40594a58b1a6c7c27eb62764854bb590.js": "/reactive-smiles-drawer/precache-manifest.40594a58b1a6c7c27eb62764854bb590.js",
+    "service-worker.js": "/reactive-smiles-drawer/service-worker.js",
+    "static/css/main.d16b9f11.chunk.css.map": "/reactive-smiles-drawer/static/css/main.d16b9f11.chunk.css.map"
+  }
+}
