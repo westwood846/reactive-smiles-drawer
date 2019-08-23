@@ -37,11 +37,10 @@ export default class Molecule extends Component {
     let input = this.props.smiles;
     let options = {
       width: this.ref.current.parentNode.clientWidth,
-      height: this.ref.current.parentNode.clientHeight
+      height: this.ref.current.parentNode.clientHeight - 13,
+      themes: THEMES
     };
 
-    console.log(options);
-    
     let smilesDrawer = new SmilesDrawer.Drawer(options);
     
     SmilesDrawer.parse(input, (tree) => {
