@@ -38,7 +38,8 @@ export default class Molecule extends Component {
     let options = {
       width: this.ref.current.parentNode.clientWidth,
       height: this.ref.current.parentNode.clientHeight - 13,
-      themes: THEMES
+      themes: THEMES,
+      compactDrawing: false,
     };
 
     let smilesDrawer = new SmilesDrawer.Drawer(options);
