@@ -28,6 +28,7 @@ export default class Molecule extends Component {
 
   componentDidMount = () => {
     setImmediate(() => this.redraw());
+    window.addEventListener("resize", this.redraw);
   }
   
   componentDidUpdate = () => {
