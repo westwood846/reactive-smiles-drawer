@@ -1,24 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Molecule from './Molecule';
 
-function App() {
-  return (
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+  
+    this.state = {
+      input: "CN1C=NC2=C1C(=O)N(C(=O)N2C)C"
+    }
+
+    this.handleInputChange = this.handleInputChange.bind(this);
+  }
+
+  handleInputChange = (event) => {
+    this.setState({
+      input: event.target.value
+    });
+  }
+  
+  render = () => (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <input type="text" value={this.state.input} onChange={this.handleInputChange}/>
+      <Molecule smiles={this.state.input}/>
     </div>
   );
 }
