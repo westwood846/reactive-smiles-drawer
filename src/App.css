@@ -12,3 +12,8 @@ input {
 .flex-grow-1 {
   flex-grow: 1;
 }
+
+.error {
+  font-size: 8pt;
+  color: #f44336;
+}

@@ -23,6 +23,7 @@ export default class Molecule extends Component {
   constructor(props) {
     super(props)
     this.ref = React.createRef();
+    this.lastInput = this.props.smiles;
   }
 
   componentDidMount = () => {
@@ -30,11 +31,12 @@ export default class Molecule extends Component {
   }
   
   componentDidUpdate = () => {
-    this.redraw();
+    if (this.lastInput !== this.props.smiles) this.redraw();
   }
 
   redraw = () => {
     let input = this.props.smiles;
+    this.lastInput = input;
     let options = {
       width: this.ref.current.parentNode.clientWidth,
       height: this.ref.current.parentNode.clientHeight - 13,
@@ -46,6 +48,8 @@ export default class Molecule extends Component {
     
     SmilesDrawer.parse(input, (tree) => {
       smilesDrawer.draw(tree, 'example-canvas', 'material', false);
+    }, (error) => {
+      if (error) this.props.onInputError(`${error.name} in col. ${error.location.start.column}: ${error.message}`);
     });
   }
 
