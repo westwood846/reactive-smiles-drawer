@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0de52fcd443377c4f61a97978951938c",
+    "revision": "793346afe592cdc380f81fddfe08dd4e",
     "url": "/reactive-smiles-drawer/index.html"
   },
   {
-    "revision": "e51a1990ee7b9ac91e1a",
+    "revision": "f2f20f8bb78a3a82a49f",
     "url": "/reactive-smiles-drawer/static/css/main.d16b9f11.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactive-smiles-drawer/static/js/2.3ee6d4db.chunk.js"
   },
   {
-    "revision": "e51a1990ee7b9ac91e1a",
-    "url": "/reactive-smiles-drawer/static/js/main.205a7145.chunk.js"
+    "revision": "f2f20f8bb78a3a82a49f",
+    "url": "/reactive-smiles-drawer/static/js/main.d6b61268.chunk.js"
   },
   {
     "revision": "c469842fcce118e3ee93",

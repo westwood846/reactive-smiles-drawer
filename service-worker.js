@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/reactive-smiles-drawer/precache-manifest.40594a58b1a6c7c27eb62764854bb590.js"
+  "/reactive-smiles-drawer/precache-manifest.888dcf1e740411b5b5e3a9596bf317ad.js"
 );
 
 self.addEventListener('message', (event) => {
