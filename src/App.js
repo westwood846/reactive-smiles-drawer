@@ -35,6 +35,7 @@ class App extends React.Component {
       <div className="flex-grow-1">
         <Molecule smiles={this.state.input} onInputError={this.handleInputError}/>
       </div>
+      <div className="copyright">Based on <a href="http://dx.doi.org/10.1021/acs.jcim.7b00425" target="_blank" rel="noopener noreferrer">Smiles Drawer</a> library</div>
     </div>
   );
 }
