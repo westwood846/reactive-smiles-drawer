@@ -50,7 +50,7 @@ export default class Molecule extends Component {
     SmilesDrawer.parse(input, (tree) => {
       smilesDrawer.draw(tree, 'example-canvas', 'material', false);
     }, (error) => {
-      if (error) this.props.onInputError(`${error.name} in col. ${error.location.start.column}: ${error.message}`);
+      if (error) this.props.onInputError(error.name === "SyntaxErrror" ? `${error.name} in col. ${error.location.start.column}: ${error.message}` : error.message);
     });
   }
 
